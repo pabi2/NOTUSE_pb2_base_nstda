@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <openerp>
-	<data>
-		<menuitem id="menu_ir_action_nstda_ir_ui_menu_main" name='App Direct'/>
-		<menuitem id="menu_ir_action_nstda_ir_ui_menu_submain" name='Config' parent="menu_ir_action_nstda_ir_ui_menu_main"/>
-		
+	<data>	
 		<record model="ir.ui.view" id="view_nstda_ir_ui_menu_tree">
 			<field name="name">ir.ui.menu.tree</field>
 			<field name="model">ir.ui.menu</field>
@@ -25,7 +22,7 @@
 		</record>
 		
 		<menuitem name="App Direct" id="menu_nstda_ir_ui_menu"
-			sequence="10" parent="menu_ir_action_nstda_ir_ui_menu_submain"
+			sequence="99" parent="base.menu_config"
 			action="action_nstda_ir_ui_menue" />
 		
 	</data>
